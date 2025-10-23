@@ -1,0 +1,13 @@
+import os
+
+file_path="/Users/AceNo/OneDrive/Desktop/test.txt"
+
+if os.path.exists(file_path):
+    print(f"the location '{file_path}' exists")
+
+    if os.path.isfile(file_path):
+        print("this is infact a file")
+    elif os.path.isdir(file_path): 
+        print("i think this is a folder")
+else:
+    print("da location doeasnt exist")
