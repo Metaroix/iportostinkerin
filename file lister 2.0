@@ -1,0 +1,10 @@
+#listing files v2
+
+import os
+dir = input("Whats the directory? ")
+
+for root, dirs, files in os.walk(dir):
+    for folder in dirs:
+        print(os.path.join(root, folder), "folder")
+    for file in dirs:
+        print(os.path.join(root, file), "file")
