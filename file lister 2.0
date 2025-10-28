@@ -8,3 +8,4 @@ for root, dirs, files in os.walk(dir):
         print(os.path.join(root, folder), "folder")
     for file in dirs:
         print(os.path.join(root, file), "file")
+#commit:'(
